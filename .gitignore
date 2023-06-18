@@ -1,0 +1,11 @@
+/train-image/*
+/train-bigger-image
+/train-image-decalle
+/train-image-decalle-plus
+/train-image-decalle-banger
+/retrain-image
+/to-validate-image
+/test-image
+/temp-image/*
+/model/X_numpy_array.npy
+/model/Y_numpy_array.npy
