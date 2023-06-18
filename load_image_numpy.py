@@ -13,7 +13,7 @@ y_file_name = "Y_numpy_array"
 # Classes à parcourir
 classes = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 # Taille des images
-img_rows = 28 
+img_rows = 28
 img_cols = 28
 
 X = []
