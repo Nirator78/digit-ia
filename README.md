@@ -8,39 +8,34 @@ archive.zip > trainingSet > trainingSet
 <table>
     <thead>
         <tr>
-            <th colspan="2">Truc à faire</th>
+            <th colspan="5">Dataset</th>
+        </tr>
+        <tr>
+            <th>Nom</th>
+            <th>Nombre d'images</th>
+            <th>Graphique de repartition</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>Refaire l'ihm</td>
-            <td>Nolan</td>
-            <td>En cours</td>
+            <td>Base</td>
+            <td>42 000</td>
+            <td><img src="stat/distribution_train_image.png"></th>
         </tr>
         <tr>
-            <td>Sauvegarder les tableau numpy en fichier cache pour faire l'entrainement plus vite une fois tout chargé</td>
-            <td>Clément</td>
-            <td>Fait</td>
+            <td>Decalle</td>
+            <td>210 000</td>
+            <td><img src="stat/distribution_train_image_decalle.png"></th>
         </tr>
         <tr>
-            <td>Decaler les image a gauche a droite en haut en bas</td>
-            <td>Clément</td>
-            <td>Fait</td>
+            <td>Decalle PLUS</td>
+            <td>546 000</td>
+            <td><img src="stat/distribution_train_image_decalle_plus.png"></th>
         </tr>
         <tr>
-            <td>Re entrainé ensuite</td>
-            <td>Clément</td>
-            <td>Fait</td>
-        </tr>
-        <tr>
-            <td>Rajouter la fonction audio</td>
-            <td>Léo</td>
-            <td>En cours</td>
-        </tr>
-        <tr>
-            <td>Rajouter la conversion en image noir et blanc automatique pour gérer un mode daltonien</td>
-            <td>Léo</td>
-            <td>Fait</td>
+            <td>Decalle BANGER</td>
+            <td>1 050 000</td>
+            <td><img src="stat/distribution_train_image_decalle_banger.png"></th>
         </tr>
     </tbody>
 </table>
