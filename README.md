@@ -60,28 +60,28 @@ archive.zip > trainingSet > trainingSet
     </thead>
     <tbody>
         <tr>
-            <td>Set de base: 41 979 images</td>
+            <td>Set de base: 42 000 images</td>
             <td>99.22 %</td>
             <td><img src="stat/model_loss_accuracy_base_20.png"></th>
             <td>99.09 %</td>
             <td><img src="stat/model_loss_accuracy_base_30.png"></th>
         </tr>
         <tr>
-            <td>Image decalle: 209 895 images</td>
+            <td>Image decalle: 210 000 images</td>
             <td>99.77 %</td>
             <td><img src="stat/model_loss_accuracy_decalle_20.png"></th>
             <td>99.85 %</td>
             <td><img src="stat/model_loss_accuracy_decalle_30.png"></th>
         </tr>
         <tr>
-            <td>Image decalle PLUS: 545 727 images</td>
+            <td>Image decalle PLUS: 546 000 images</td>
             <td>99.89 %</td>
             <td><img src="stat/model_loss_accuracy_decalle_plus_20.png"></th>
             <td>99.94 %</td>
             <td><img src="stat/model_loss_accuracy_decalle_plus_30.png"></th>
         </tr>
         <tr>
-            <td>Image decalle BANGER: 1 049 475 images</td>
+            <td>Image decalle BANGER: 1 050 000 images</td>
             <td>99.95 %</td>
             <td><img src="stat/model_loss_accuracy_decalle_banger_20.png"></th>
             <td>99.97 %</td>

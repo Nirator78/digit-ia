@@ -2,10 +2,10 @@
 def choice_loader():
     # Affichage du menu
     print("Choisissez de charger :")
-    print("1. Image base: 41 979 images")
-    print("2. Image decalle: 209 895 images")
-    print("3. Image decalle PLUS: 545 727 images")
-    print("4. Image decalle BANGER: 1 049 475 images")
+    print("1. Image base: 42 000 images")
+    print("2. Image decalle: 210 000 images")
+    print("3. Image decalle PLUS: 546 000 images")
+    print("4. Image decalle BANGER: 1 050 000 images")
 
     # Lecture du choix
     while True:
