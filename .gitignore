@@ -9,3 +9,5 @@
 /temp-image
 /numpy-array
 /data-brut
+
+__pycache__/
