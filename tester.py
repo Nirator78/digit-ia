@@ -9,7 +9,7 @@ import shutil
 img_rows, img_cols = 28, 28
 pathTest = "test-image/"
 pathTrain = "train-image/"
-logger = False
+logger = True
 
 # charger le modèle entraîné
 model = load_model("model/model.h5")
