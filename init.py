@@ -6,6 +6,7 @@ dossier_liste = [
     "train-image-decalle", 
     "train-image-decalle-plus", 
     "train-image-decalle-banger", 
+    "train-image-decalle-banger-2", 
     "retrain-image", 
     "test-image", 
     "temp-image", 

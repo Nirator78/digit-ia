@@ -6,6 +6,7 @@ def choice_loader():
     print("2. Image decalle: 210 000 images")
     print("3. Image decalle PLUS: 546 000 images")
     print("4. Image decalle BANGER: 1 050 000 images")
+    print("5. Image decalle BANGER 2: 3 150 000 images")
 
     # Lecture du choix
     while True:
@@ -20,7 +21,8 @@ def choice_loader():
         1: 'train-image',
         2: 'train-image-decalle',
         3: 'train-image-decalle-plus',
-        4: 'train-image-decalle-banger'
+        4: 'train-image-decalle-banger',
+        5: 'train-image-decalle-banger-2'
     }
 
     loader_choisie = loaders[choix]

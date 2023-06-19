@@ -37,6 +37,11 @@ archive.zip > trainingSet > trainingSet
             <td>1 050 000</td>
             <td><img src="stat/distribution_train_image_decalle_banger.png"></th>
         </tr>
+        <tr>
+            <td>Decalle BANGER 2</td>
+            <td>3 150 000</td>
+            <td><img src="stat/distribution_train_image_decalle_banger_2.png"></th>
+        </tr>
     </tbody>
 </table>
 
@@ -81,6 +86,13 @@ archive.zip > trainingSet > trainingSet
             <td><img src="stat/model_loss_accuracy_decalle_banger_20.png"></th>
             <td>99.97 %</td>
             <td><img src="stat/model_loss_accuracy_decalle_banger_30.png"></th>
+        </tr>
+        <tr>
+            <td>Image decalle BANGER 2: 3 150 000 images</td>
+            <td> %</td>
+            <td><img src="stat/model_loss_accuracy_decalle_banger_2_20.png"></th>
+            <td> %</td>
+            <td><img src="stat/model_loss_accuracy_decalle_banger_2_30.png"></th>
         </tr>
     </tbody>
 </table>
