@@ -11,7 +11,7 @@ def choice_loader():
     # Lecture du choix
     while True:
         choix = input("Entrez le numéro de votre choix : ")
-        if choix.isdigit() and 1 <= int(choix) <= 4:
+        if choix.isdigit() and 1 <= int(choix) <= 5:
             choix = int(choix)
             break
         print("Choix invalide. Veuillez réessayer.")
