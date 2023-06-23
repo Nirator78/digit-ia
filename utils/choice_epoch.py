@@ -15,8 +15,8 @@ def choice_epoch():
 
     # Mapping entre les choix et les loaders
     loaders = {
-        1: '20',
-        2: '30',
+        1: 20,
+        2: 30,
     }
 
     loader_choisie = loaders[choix]
