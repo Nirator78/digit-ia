@@ -1,5 +1,4 @@
 import os
-import shutil
 import numpy as np
 import matplotlib.pyplot as plt
 from keras.models import Sequential
@@ -16,7 +15,7 @@ img_rows = 28
 img_cols = 28
 
 # On charge les tableau d'image pre enregistrer
-X = np.load(f"numpy-array/{nom}/Y_numpy_array.npy")
+X = np.load(f"numpy-array/{nom}/X_numpy_array.npy")
 Y = np.load(f"numpy-array/{nom}/Y_numpy_array.npy")
 
 # Now defining some parameters for our model
@@ -74,8 +73,8 @@ score ,acc = model.evaluate(x_test,y_test)
 print("Score is :",score)
 print("Accuracy :",acc)
 
-if os.path.exists(f"model/{nom}/{epochs}"):
-    shutil.rmtree(f"model/{nom}/{epochs}")
+if not os.path.exists(f"model/{nom}/{epochs}"):
+    os.makedirs(f"model/{nom}/{epochs}")
 
 # export du modèle
 model.save(f"model/{nom}/{epochs}/model.h5")
