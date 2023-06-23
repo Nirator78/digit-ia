@@ -1,3 +1,5 @@
+import os
+import shutil
 import numpy as np
 import matplotlib.pyplot as plt
 from keras.models import Sequential
@@ -5,16 +7,17 @@ from keras.layers import Dense, Dropout, Conv2D, MaxPooling2D, Flatten, BatchNor
 from keras.utils import to_categorical
 import keras.backend as K
 from sklearn.model_selection import train_test_split
+from utils.choice_loader import choice_loader
 from utils.choice_epoch import choice_epoch
 
-nom = "decalle_banger"
+nom = choice_loader()
 
 img_rows = 28 
 img_cols = 28
 
 # On charge les tableau d'image pre enregistrer
-X = np.load("model/X_numpy_array.npy")
-Y = np.load("model/Y_numpy_array.npy")
+X = np.load(f"numpy-array/{nom}/Y_numpy_array.npy")
+Y = np.load(f"numpy-array/{nom}/Y_numpy_array.npy")
 
 # Now defining some parameters for our model
 num_classes = 10
@@ -71,6 +74,9 @@ score ,acc = model.evaluate(x_test,y_test)
 print("Score is :",score)
 print("Accuracy :",acc)
 
+if os.path.exists(f"model/{nom}/{epochs}"):
+    shutil.rmtree(f"model/{nom}/{epochs}")
+
 # export du modèle
-model.save("model/model-decale-banger-20.h5")
-model.save_weights("model/model_weights-decale-banger-20.h5")
+model.save(f"model/{nom}/{epochs}/model.h5")
+model.save_weights(f"model/{nom}/{epochs}/model_weights.h5")
