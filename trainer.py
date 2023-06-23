@@ -28,15 +28,15 @@ y_train = to_categorical(y_train, num_classes = 10, dtype = "float32")
 y_test = to_categorical(y_test, num_classes = 10, dtype = "float32")
 
 if K.image_data_format() =="channels_first":
-    x_train = x_train.reshape(x_train.shape[0],1,img_rows,img_cols)
-    x_test = x_test.reshape(x_test.shape[0],1,img_rows,img_cols)
-    input_shape = (1,img_rows,img_cols)
+    x_train = x_train.reshape(x_train.shape[0],1, img_rows, img_cols)
+    x_test = x_test.reshape(x_test.shape[0], 1, img_rows, img_cols)
+    input_shape = (1, img_rows, img_cols)
 else:
-    x_train = x_train.reshape(x_train.shape[0],img_rows,img_cols,1)
-    x_test = x_test.reshape(x_test.shape[0],img_rows,img_cols,1)
-    input_shape = (img_rows,img_cols,1)
+    x_train = x_train.reshape(x_train.shape[0], img_rows, img_cols, 1)
+    x_test = x_test.reshape(x_test.shape[0], img_rows, img_cols, 1)
+    input_shape = (img_rows, img_cols, 1)
     
-input_shape = (img_rows,img_cols,1)
+input_shape = (img_rows, img_cols, 1)
     
 model = Sequential()
 model.add(Conv2D(32, kernel_size = 3, activation="relu", input_shape = input_shape))
@@ -59,7 +59,7 @@ model.add(Dense(10, activation="softmax"))
 
 model.compile(loss="categorical_crossentropy", optimizer="adam", metrics=["accuracy"])
 
-nn = model.fit(x_train, y_train, batch_size=32, epochs=epochs, validation_data=(x_test,y_test))
+nn = model.fit(x_train, y_train, batch_size=32, epochs=epochs, validation_data=(x_test, y_test))
 
 plt.plot(nn.history["loss"])
 plt.plot(nn.history["accuracy"])
@@ -69,9 +69,9 @@ plt.xlabel("epoch")
 plt.legend(["train_loss", "train_accuracy"], loc="upper right")
 plt.savefig("stat/model_loss_accuracy_" + nom + "_"+ str(epochs) + ".png")
 
-score ,acc = model.evaluate(x_test,y_test)
-print("Score is :",score)
-print("Accuracy :",acc)
+score, acc = model.evaluate(x_test, y_test)
+print("Score is :", score)
+print("Accuracy :", acc)
 
 if not os.path.exists(f"model/{nom}/{epochs}"):
     os.makedirs(f"model/{nom}/{epochs}")
