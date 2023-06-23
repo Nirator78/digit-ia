@@ -5,6 +5,7 @@ from keras.layers import Dense, Dropout, Conv2D, MaxPooling2D, Flatten, BatchNor
 from keras.utils import to_categorical
 import keras.backend as K
 from sklearn.model_selection import train_test_split
+from utils.choice_epoch import choice_epoch
 
 nom = "decalle_banger"
 
@@ -17,7 +18,7 @@ Y = np.load("model/Y_numpy_array.npy")
 
 # Now defining some parameters for our model
 num_classes = 10
-epochs = 20
+epochs = choice_epoch()
 
 x_train,x_test,y_train,y_test = train_test_split(X, Y, test_size=0.2, random_state=42)
 
