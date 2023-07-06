@@ -62,37 +62,37 @@ archive.zip > trainingSet > trainingSet
         <tr>
             <td>Set de base: 42 000 images</td>
             <td>99.22 %</td>
-            <td><img src="stat/model_loss_accuracy_base_20.png"></th>
+            <td><img src="stat/model_loss_accuracy_train-image_20.png"></th>
             <td>99.09 %</td>
-            <td><img src="stat/model_loss_accuracy_base_30.png"></th>
+            <td><img src="stat/model_loss_accuracy_train-image_30.png"></th>
         </tr>
         <tr>
             <td>Image decalle: 210 000 images</td>
             <td>99.77 %</td>
-            <td><img src="stat/model_loss_accuracy_decalle_20.png"></th>
+            <td><img src="stat/model_loss_accuracy_train-image-decalle_20.png"></th>
             <td>99.85 %</td>
-            <td><img src="stat/model_loss_accuracy_decalle_30.png"></th>
+            <td><img src="stat/model_loss_accuracy_train-image-decalle_30.png"></th>
         </tr>
         <tr>
             <td>Image decalle PLUS: 546 000 images</td>
             <td>99.89 %</td>
-            <td><img src="stat/model_loss_accuracy_decalle_plus_20.png"></th>
+            <td><img src="stat/model_loss_accuracy_train-image-decalle-plus_20.png"></th>
             <td>99.94 %</td>
-            <td><img src="stat/model_loss_accuracy_decalle_plus_30.png"></th>
+            <td><img src="stat/model_loss_accuracy_train-image-decalle-plus_30.png"></th>
         </tr>
         <tr>
             <td>Image decalle BANGER: 1 050 000 images</td>
             <td>99.95 %</td>
-            <td><img src="stat/model_loss_accuracy_decalle_banger_20.png"></th>
+            <td><img src="stat/model_loss_accuracy_train-image-decalle-banger_20.png"></th>
             <td>99.97 %</td>
-            <td><img src="stat/model_loss_accuracy_decalle_banger_30.png"></th>
+            <td><img src="stat/model_loss_accuracy_train-image-decalle-banger_30.png"></th>
         </tr>
         <tr>
             <td>Image decalle BANGER 2: 3 150 000 images</td>
             <td> %</td>
-            <td><img src="stat/model_loss_accuracy_decalle_banger_2_20.png"></th>
+            <td><img src="stat/model_loss_accuracy_train-image-decalle-banger-2_20.png"></th>
             <td> %</td>
-            <td><img src="stat/model_loss_accuracy_decalle_banger_2_30.png"></th>
+            <td><img src="stat/model_loss_accuracy_train-image-decalle-banger-2_30.png"></th>
         </tr>
     </tbody>
 </table>
