@@ -89,9 +89,9 @@ archive.zip > trainingSet > trainingSet
         </tr>
         <tr>
             <td>Image decalle BANGER 2: 3 150 000 images</td>
-            <td> %</td>
+            <td>99.93 %</td>
             <td><img src="stat/model_loss_accuracy_train-image-decalle-banger-2_20.png"></th>
-            <td> %</td>
+            <td>99.94 %</td>
             <td><img src="stat/model_loss_accuracy_train-image-decalle-banger-2_30.png"></th>
         </tr>
     </tbody>
